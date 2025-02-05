@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="card">
+        <div class="card__content">
+            <img 
+                data-testid="profilePicture" 
+                src=".../../image/image.png"
+                alt="Profile Picture" 
+                class="profile-image"
+            >
+            <h1 data-testid="fullName" class="name">Oluwafisayo Ibrahim</h1>
+            <p data-testid="jobTitle" class="job-title">Frontend Developer</p>
+            <p data-testid="shortBio" class="bio">
+                Passionate frontend developer with expertise in creating responsive web applications. 
+                I love turning complex problems into simple, beautiful, and intuitive solutions.
+            </p>
+            <div data-testid="currentLocation" class="location">
+                <i class="fas fa-map-marker-alt icon"></i>
+                Lagos, Nigeria.
+            </div>
+            <a data-testid="emailAddress" href="mailto:oluwafisayoibrahim2@gmail.com" class="email">
+                <i class="fas fa-envelope icon"></i>
+                oluwafisayoibrahim2@gmail.com
+            </a>
+            <div data-testid="socialLinks" class="social-links">
+                <a href="https://github.com/OluwafisayoIbrahim" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/oluwafisayo-ibrahim/" class="social-link">LinkedIn</a>
+                <a href="https://www.x.com/whoisfisayo" class="social-link">Twitter</a>
+            </div>
+            <div data-testid="currentTimeUTC" class="time">
+                <i class="fas fa-clock icon"></i>
+                <span id="utc-time"></span>
+            </div>
+        </div>
+    </div>
